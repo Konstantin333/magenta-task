@@ -1,0 +1,27 @@
+<div class="container">
+  <header>Среди женщин:</header>
+  <div class="scroll-table">
+    <table>
+      <tr>
+        <td>Дисциплина</td>
+        <td>Дата</td>
+        <td>Спортсменка</td>
+        <td>Страна</td>
+        <td>Рекорд</td>
+        <td>Место</td>
+      </tr>
+    </table>
+    <div class="scroll-table-body">
+      <table>
+        <tr *ngFor="let prop of arrayWomen">
+          <td>{{ prop.discipline }}</td>
+          <td>{{ prop.date }}</td>
+          <td>{{ prop.sportsman }}</td>
+          <td>{{ prop.country }}</td>
+          <td>{{ prop.record }}</td>
+          <td>{{ prop.place }}</td>
+        </tr>
+      </table>
+    </div>	   
+  </div>
+</div>
